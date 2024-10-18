@@ -1,0 +1,29 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.headerLogo h2 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.headerNav {
+    display: flex;
+    gap: 32px;
+}
+
+.headerNav a {
+    padding: 0px 12px;
+    color: #ddd;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 70px;
+}
