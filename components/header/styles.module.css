@@ -14,6 +14,10 @@
     letter-spacing: 2px;
 }
 
+.headerLogo svg {
+    display: none;
+}
+
 .headerNav {
     display: flex;
     gap: 32px;
@@ -26,4 +30,54 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 70px;
+}
+
+@media screen and (max-width:768px) {
+    .headerNav {
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .headerContainer {
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .headerLogo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .headerLogo svg {
+        display: block;
+    }
+
+    .headerNav {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        left: -500px;
+        transition: 1s all ease;
+        background-color: white;
+        top: 50px;
+        gap: 20px;
+        padding: 20px;
+        z-index: 2;
+    }
+
+    .headerCont {
+        left: 0px;
+        transition: 1s all ease
+    }
+
+    .headerNav a {
+        padding: 0px;
+        line-height: 100%;
+        color: #0044ad;
+    }
 }

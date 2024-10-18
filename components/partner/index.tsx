@@ -32,8 +32,8 @@ const Partner = () => {
               </div>
             </div>
             <div className={styles.partnerButton}>
-              <Button buttonText="Explore Opportunities" active={true} type="Primary" />
-              <Button buttonText="Meet our team" active={true} type="Primarys" />
+              <Button buttonText="Explore Opportunities" type="Primary" />
+              <Button buttonText="Meet our team" type="Primarys" />
             </div>
           </div>
           <Image src="/images/partner.png" width={624} height={654} alt="Partners" />

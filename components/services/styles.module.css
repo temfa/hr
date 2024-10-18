@@ -41,3 +41,33 @@
     letter-spacing: 1px;
     font-weight: 400;
 }
+
+@media screen and (max-width:500px) {
+    .servicesWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .servicesSingle {
+        padding: 16px;
+    }
+
+    .servicesSingle h2 {
+        font-size: 20px;
+    }
+
+    .servicesSingle p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .servicesSingle h2 {
+        font-size: 15px;
+    }
+
+    .servicesSingle p {
+        font-size: 13px;
+    }
+}

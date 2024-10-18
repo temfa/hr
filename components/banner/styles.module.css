@@ -34,6 +34,7 @@
     font-weight: 400;
     color: #fff;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .bannerContent h2 span {
@@ -57,4 +58,16 @@
     border-radius: 0;
     border: none;
     border-radius: 6px;
+}
+
+@media screen and (max-width:500px) {
+    .bannerContent h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .bannerContent h2 {
+        font-size: 28px;
+    }
 }

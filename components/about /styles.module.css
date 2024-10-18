@@ -34,7 +34,6 @@
 .aboutSingle {
     padding: 32px 20px;
     color: black;
-    /* box-shadow: 0 1px 3px 1px #00000026, 0 1px 2px 0 #0000004d; */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -49,8 +48,37 @@
 
 .aboutSingle>p {
     font-size: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 400;
     text-align: left;
     letter-spacing: 2px;
+}
+
+@media screen and (max-width:769px) {
+    .aboutCont {
+        gap: 0px;
+    }
+
+    .aboutWrapper {
+        flex-direction: column;
+    }
+
+    .aboutWrapper img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .aboutSingle {
+        padding: 20px 0px 0px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .aboutSingle>h2 {
+        font-size: 20px;
+    }
+
+    .aboutSingle>p {
+        font-size: 16px;
+    }
 }

@@ -3,3 +3,22 @@
     max-width: 1180px;
     margin: 0px auto;
 }
+
+@media screen and (max-width:1025px) {
+    .layoutContainer {
+        width: 85%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .layoutContainer {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .layoutContainer {
+        width: 95%;
+    }
+}
